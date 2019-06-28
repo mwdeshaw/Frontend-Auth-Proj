@@ -6,7 +6,7 @@ import Root from './components/root';
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
   let preloadedState = undefined;
-  if (window.currentUser) {
+  if (window.currentUser) { //this gets the current user from the window, which we set in app view
     preloadedState = {
       session: {
         currentUser: window.currentUser
